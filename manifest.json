@@ -1,0 +1,19 @@
+{
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "author": "Nick Semenkovich",
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "description": "Set a maximum limit on history entry lifetime. By Nick Semenkovich <semenko@alum.mit.edu>",
+    "manifest_version": 2,
+    "name": "Limit History Lifetime",
+    "options_page": "options.html",
+    "permissions": [
+        "alarms",
+        "history"
+    ],
+    "version": "2014.2.23"
+}

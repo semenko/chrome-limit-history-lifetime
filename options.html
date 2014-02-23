@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+ * Derived from the Google Calendar Checker available at:
+ * http://code.google.com/chrome/extensions/samples.html
+ * 
+ * Licensed under the Google 3-Clause BSD:
+ * http://code.google.com/google_bsd_license.html
+-->
+<html>
+<head>
+    <title>Limit History Lifespan Options</title>
+    <style>
+        #content {
+            background-color: white;
+            border: 4px solid #0266C8;
+            border-radius: 12px;
+            margin: 40px auto 20px;
+            padding: 8px;
+            width: 600px;
+        }
+        .option_row {
+            clear: left;
+            padding: 2.5em 1em 0;
+            text-align:center
+        }
+        #logo {
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+<div id="content">
+    <div id = "logo">
+        <label>Limit History Entry Lifetime Options</label>
+    </div>
+
+    <div class="option_row">
+        <div>
+            <table cellpadding=1 width=100%>
+                <tr><td colspan="5"><hr></td></tr>
+                <tr>
+                    <td width="30%">
+                        &nbsp;
+                    </td>
+                    <td width="60%" align="left">
+                        <span id="historyLimitText" title="">Limit history lifespan to <select id="selectHistoryLimit"></select> days.</span>
+                    </td>
+                    <td width="10%"></td>
+                </tr>
+                <tr><td colspan="5"><hr></td></tr>
+            </table>
+            <br><span style="font-size: x-small; font-family: Verdana; color:#888" id="statusBar">&nbsp;</span>
+        </div>
+    </div>
+</div>
+<div style="text-align: center;">
+      <span style="font-size: x-small; font-family: Verdana">Copyright &copy; Nick Semenkovich 2014
+          <br>&lt;<a href="mailto:semenko@alum.mit.edu">semenko@alum.mit.edu</a>&gt;<br>
+        Open source at <a href="https://github.com/semenko/chrome-limit-history-lifetime">GitHub</a> (License: MIT)
+          </span>
+</div>
+<script src="options.js"></script>
+</body>
+</html>
