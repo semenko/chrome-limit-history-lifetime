@@ -15,5 +15,10 @@
         "alarms",
         "history"
     ],
-    "version": "2014.2.23"
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "version": "2014.6.4"
 }
