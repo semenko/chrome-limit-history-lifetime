@@ -10,8 +10,8 @@
 "use strict";
 
 function scanHistory() {
-    // Grab the history preference, or default to 5 days.
-    var maxHistoryLifeInDays = JSON.parse(localStorage.historyLimit || 5);
+    // Grab the history preference, or default to 4 days.
+    var maxHistoryLifeInDays = JSON.parse(localStorage.historyLimit || 4);
 
     var maxHistoryLifeInMilliseconds = maxHistoryLifeInDays * 24 * 60 * 60 * 1000;
 

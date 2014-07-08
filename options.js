@@ -13,8 +13,8 @@ for (var i=1; i<=60; i++){
     select.options[select.options.length] = new Option(i);
 }
 
-// Default to 7 if LSO isn't set
-var historyLimit = JSON.parse(localStorage.historyLimit || 5);
+// Default to 4 if LSO isn't set
+var historyLimit = JSON.parse(localStorage.historyLimit || 4);
 select.selectedIndex = historyLimit - 1;  // Zero indexed.
 
 
