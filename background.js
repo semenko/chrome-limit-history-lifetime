@@ -37,3 +37,6 @@ function setup() {
 chrome.runtime.onInstalled.addListener(setup);
 
 chrome.alarms.onAlarm.addListener(function(alarm) { scanHistory(); });
+
+// Let's run once at startup, too, since alarm can be finicky.
+chrome.runtime.onStartup.addListener(function() { scanHistory(); });
