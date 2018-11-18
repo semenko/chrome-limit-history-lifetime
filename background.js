@@ -19,7 +19,7 @@ function scanHistory() {
 
     // Wow, this is an easy API.
     chrome.history.deleteRange({startTime: 0, endTime: maxTime},
-        function() { if (chrome.runtime.lasterror) { console.warn(chrome.runtime.lastError); } }
+        function() { if (chrome.runtime.lastError) { console.warn(chrome.runtime.lastError); } }
     );
 }
 
